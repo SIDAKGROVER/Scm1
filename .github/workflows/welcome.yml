@@ -1,0 +1,12 @@
+name: Welcome Message
+
+on:
+  pull_request:
+    types: [opened]
+
+jobs:
+  welcome:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Say hi!"
+        run: echo "Welcome to the project, contributor!"
